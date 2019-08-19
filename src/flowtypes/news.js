@@ -10,5 +10,6 @@ export type News = {
     /** Date of the news */
     date: string,
     /** Is a featured news */
-    isFeatured: boolean
+    isFeatured: boolean,
+    newFeature: boolean,
 };

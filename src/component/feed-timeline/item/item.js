@@ -10,7 +10,8 @@ const FeedTimelineItem = ({
     image,
     author,
     date,
-    isFeatured
+    isFeatured,
+    newFeature
 }: News): React.Node => (
     <div className="feed_timeline__item">
         {isFeatured && (
@@ -18,6 +19,7 @@ const FeedTimelineItem = ({
                 Featured!
             </span>
         )}
+        {newFeature && (<div>With new feature</div>)}
         <img className="feed_timeline__item_image" src={image} alt={title} />
         <div className="feed_timeline__item_timeline">
             <h3 className="feed_timeline__item_title">{title}</h3>
