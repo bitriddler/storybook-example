@@ -27,3 +27,14 @@ story.add("item", () => (
         isFeatured={boolean("isFeatured", news[0].isFeatured)}
     />
 ));
+
+story.add("item with new feature", () => (
+    <FeedTimelineItem
+        newFeature
+        title={text("title", news[0].title)}
+        author={text("author", news[0].author)}
+        image={text("image", news[0].image)}
+        date={text("date", news[0].date)}
+        isFeatured={boolean("isFeatured", news[0].isFeatured)}
+    />
+));
